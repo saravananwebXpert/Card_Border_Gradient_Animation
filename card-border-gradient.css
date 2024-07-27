@@ -1,0 +1,41 @@
+#border {
+  height: 400px;
+  margin: 200px;
+  position: absolute;
+  overflow: hidden;
+  width: 300px;
+}
+#hide {
+  height: 730px;
+  width: 610px;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    rgb(178, 22, 22),
+    rgb(187, 130, 24),
+    blue,
+    rgb(15, 238, 15),
+    rgb(219, 22, 55),
+    yellow
+  );
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#close {
+  content: "";
+  height: 384px;
+  width: 280px;
+  background-color: black;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+@keyframes animate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
